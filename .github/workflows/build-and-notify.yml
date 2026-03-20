@@ -29,6 +29,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Stamp version
+        run: sed -i "s/__VERSION__/${{ github.event.release.tag_name }}/" index.html
+
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:
