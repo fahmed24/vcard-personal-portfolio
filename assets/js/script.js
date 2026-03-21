@@ -61,20 +61,6 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
@@ -94,23 +80,39 @@ const filterFunc = function (selectedValue) {
 
 }
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+if (select) {
+  select.addEventListener("click", function () { elementToggleFunc(this); });
 
-for (let i = 0; i < filterBtn.length; i++) {
+  for (let i = 0; i < selectItems.length; i++) {
+    selectItems[i].addEventListener("click", function () {
 
-  filterBtn[i].addEventListener("click", function () {
+      let selectedValue = this.innerText.toLowerCase();
+      selectValue.innerText = this.innerText;
+      elementToggleFunc(select);
+      filterFunc(selectedValue);
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
+    });
+  }
+}
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
+if (filterBtn.length > 0) {
+  let lastClickedBtn = filterBtn[0];
 
-  });
+  for (let i = 0; i < filterBtn.length; i++) {
 
+    filterBtn[i].addEventListener("click", function () {
+
+      let selectedValue = this.innerText.toLowerCase();
+      if (selectValue) selectValue.innerText = this.innerText;
+      filterFunc(selectedValue);
+
+      lastClickedBtn.classList.remove("active");
+      this.classList.add("active");
+      lastClickedBtn = this;
+
+    });
+
+  }
 }
 
 
@@ -121,17 +123,19 @@ const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
 // add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+if (form) {
+  for (let i = 0; i < formInputs.length; i++) {
+    formInputs[i].addEventListener("input", function () {
 
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
+      // check form validation
+      if (form.checkValidity()) {
+        formBtn.removeAttribute("disabled");
+      } else {
+        formBtn.setAttribute("disabled", "");
+      }
 
-  });
+    });
+  }
 }
 
 
@@ -139,6 +143,41 @@ for (let i = 0; i < formInputs.length; i++) {
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
+
+// lightbox
+const lightboxOverlay = document.querySelector("[data-lightbox-overlay]");
+const lightboxImgEl = document.querySelector("[data-lightbox-img-el]");
+const lightboxCaption = document.querySelector("[data-lightbox-text]");
+
+const openLightbox = function (src, caption) {
+  lightboxCaption.textContent = caption;
+  lightboxImgEl.alt = caption;
+  lightboxImgEl.src = src;
+  lightboxOverlay.classList.add("active");
+  document.body.style.overflow = "hidden";
+};
+
+const closeLightbox = function () {
+  lightboxOverlay.classList.remove("active");
+  document.body.style.overflow = "";
+};
+
+document.addEventListener("click", function (e) {
+  const figure = e.target.closest(".screenshot-link");
+  if (figure && figure.dataset.lightboxImg) {
+    openLightbox(figure.dataset.lightboxImg, figure.dataset.lightboxCaption);
+    return;
+  }
+  if (e.target.closest("[data-lightbox-close]") || e.target === lightboxOverlay) {
+    closeLightbox();
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") closeLightbox();
+});
+
+
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {

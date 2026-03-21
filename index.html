@@ -50,7 +50,7 @@
         </div>
 
         <a href="https://www.credly.com/badges/157fe2a2-3e72-4e1f-a0a8-7d25720ea640/public_url" target="_blank" rel="noopener noreferrer" style="margin-block: -15px;">
-          <img src="./assets/images/aws-sa-pro.png" alt="AWS Certified Solutions Architect - Professional" width="60">
+          <img src="./assets/images/aws-sa-pro.png" alt="AWS Certified Solutions Architect - Professional" width="70">
         </a>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -159,15 +159,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>Live Infrastructure</button>
           </li>
 
         </ul>
@@ -480,233 +472,143 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="live infrastructure">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Live Infrastructure</h2>
         </header>
 
         <section class="projects">
 
-          <ul class="filter-list">
+          <div class="infra-intro content-card">
+            <p class="timeline-text">This isn't a demo project—it's a live, production-style environment.</p>
+            <p class="timeline-text">This portfolio is deployed through a Kubernetes cluster using GitOps, with centralized authentication and full observability.</p>
+          </div>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+            <h3 class="h3">What's Running</h3>
+          </div>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
+          <ul class="infra-list content-card">
+            <li class="timeline-text">— Kubernetes orchestrating all services</li>
+            <li class="timeline-text">— ArgoCD managing deployments via GitOps</li>
+            <li class="timeline-text">— OIDC (SSO) securing access across applications</li>
+            <li class="timeline-text">— Grafana providing real-time system visibility</li>
+            <li class="timeline-text">— CI/CD pipelines building and deploying changes automatically</li>
           </ul>
 
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="camera-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Live System Snapshots</h3>
           </div>
+
+          <p class="timeline-text" style="margin-bottom: 15px;">The screenshots below reflect the actual running environment.</p>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/project-1.jpg" data-lightbox-caption="ArgoCD — GitOps Deployments">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/project-1.jpg" alt="ArgoCD GitOps Deployments" loading="lazy">
+              </figure>
+              <h3 class="project-title">ArgoCD — GitOps Deployments</h3>
+              <p class="project-category">Applications actively synced and reconciled from Git.</p>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/project-2.png" data-lightbox-caption="Grafana — Observability">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/project-2.png" alt="Grafana Observability" loading="lazy">
+              </figure>
+              <h3 class="project-title">Grafana — Observability</h3>
+              <p class="project-category">Real-time metrics providing visibility into system health and performance.</p>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/project-3.jpg" data-lightbox-caption="CI/CD — Deployment Pipeline">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/project-3.jpg" alt="CI/CD Deployment Pipeline" loading="lazy">
+              </figure>
+              <h3 class="project-title">CI/CD — Deployment Pipeline</h3>
+              <p class="project-category">Automated workflows building and deploying changes from GitHub.</p>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/project-4.png" data-lightbox-caption="Homarr — Service Dashboard">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/project-4.png" alt="Homarr Service Dashboard" loading="lazy">
+              </figure>
+              <h3 class="project-title">Homarr — Service Dashboard</h3>
+              <p class="project-category">Centralized access point for all deployed services.</p>
             </li>
 
           </ul>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <h3 class="h3">What You're Looking At</h3>
+          </div>
+
+          <ul class="infra-list content-card">
+            <li class="timeline-text">— Applications actively synced and healthy in ArgoCD</li>
+            <li class="timeline-text">— Live infrastructure metrics in Grafana</li>
+            <li class="timeline-text">— CI/CD pipelines executing deployments</li>
+            <li class="timeline-text">— A unified dashboard for service access</li>
+          </ul>
+
+          <p class="timeline-text" style="margin-top: 12px; font-style: italic;">Everything shown is real and currently in use.</p>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="open-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Explore It Yourself</h3>
+          </div>
+
+          <div class="content-card" style="margin-bottom: 15px;">
+            <p class="timeline-text">You can log in and explore the environment through a centralized dashboard.</p>
+            <p class="timeline-text" style="margin-top: 8px;">Access is intentionally scoped:</p>
+            <ul class="infra-list" style="margin-top: 6px;">
+              <li class="timeline-text">— Read-only permissions</li>
+              <li class="timeline-text">— No sensitive data</li>
+              <li class="timeline-text">— SSO-enabled authentication</li>
+            </ul>
+          </div>
+
+          <div class="content-card">
+            <p class="contact-title">Demo Access</p>
+            <p class="timeline-text" style="margin-top: 6px;">Username: <strong>demo</strong> &nbsp;|&nbsp; Password: <strong>demo</strong></p>
+          </div>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <h3 class="h3">Source of Truth</h3>
+          </div>
+
+          <div class="content-card" style="margin-bottom: 15px;">
+            <p class="timeline-text">The full implementation—including infrastructure, deployment workflows, and configuration—is available in GitHub.</p>
+          </div>
+
+          <div class="content-card">
+            <p class="timeline-text" style="font-style: italic;">This is how I approach systems: automated, observable, and designed to run reliably without manual intervention.</p>
+          </div>
 
         </section>
 
@@ -716,11 +618,7 @@
 
 
 
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="blog" style="display:none;">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -908,11 +806,7 @@
 
 
 
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="contact" style="display:none;">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -954,6 +848,15 @@
     </div>
 
   </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" data-lightbox-overlay>
+    <button class="lightbox-close" data-lightbox-close>&times;</button>
+    <figure class="lightbox-figure" data-lightbox-close>
+      <img alt="" data-lightbox-img-el>
+      <figcaption data-lightbox-text></figcaption>
+    </figure>
+  </div>
 
 
 
