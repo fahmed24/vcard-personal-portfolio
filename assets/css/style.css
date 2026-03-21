@@ -1029,6 +1029,11 @@ main {
   transition: var(--transition-1);
 }
 
+.project-item > a:hover .project-img img,
+.project-img.screenshot-link:hover img {
+  transform: scale(1.05);
+}
+
 .project-item > a:hover img { transform: scale(1.1); }
 
 .project-title,
