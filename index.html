@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fahad Ahmed | Cloud & DevOps Engineer</title>
+  <title>Fahad Ahmed | Sr. Cloud & DevOps Engineer</title>
 
   <!--
     - favicon
@@ -46,7 +46,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Fahad Ahmed">Fahad Ahmed</h1>
-          <p class="title">Cloud & DevOps Engineer</p>
+          <p class="title">Sr. Cloud & DevOps Engineer</p>
         </div>
 
         <a href="https://www.credly.com/badges/157fe2a2-3e72-4e1f-a0a8-7d25720ea640/public_url" target="_blank" rel="noopener noreferrer" style="margin-block: -15px;">
@@ -115,13 +115,13 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.linkedin.com/in/fahad-ahmed-106376a5" target="_blank" rel="noopener noreferrer" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://github.com/fahmed24" target="_blank" rel="noopener noreferrer" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -159,7 +159,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Live Infrastructure</button>
+            <button class="navbar-link" data-nav-link id="nav-live-infrastructure">Live Infrastructure</button>
           </li>
 
         </ul>
@@ -182,17 +182,16 @@
 
         <section class="about-text">
           <p>
-            I’m a Cloud and DevOps Engineer based in Southern California, focused on building reliable, scalable infrastructure. 
-            I care about how systems operate in the real world—how services are deployed, pipelines perform, and stability is maintained at scale.
+            I’m a Sr. Cloud and DevOps Engineer who designs and operates cloud infrastructure at enterprise scale. Recent work includes migrating 400+ production AWS accounts to a new organization, architecting a secure hybrid cloud environment with VPN-based access and Sophos NDR traffic mirroring, and leading an Azure-to-AWS migration for a large Kubernetes-based healthcare platform.
           </p>
           <p>
-            I’ve worked across consulting and enterprise environments: automating cloud systems at Ingram Micro, where I designed workflows that cut Dev/QA operating costs by 50%; managing cloud infrastructure and identity at McKinsey; and leading multi-tier application migrations at Slalom. My core work centers on Terraform, AWS, Kubernetes, and the CI/CD systems that tie everything together.
+            I’ve delivered that work across Ingram Micro, McKinsey, and Slalom—enterprise product teams and consulting engagements where infrastructure decisions carry real business weight. I also built automation at Ingram that cut Dev/QA cloud operating costs by 50%. My core stack is Terraform, AWS, Kubernetes, and the CI/CD systems that make deployment fast and auditable.
           </p>
           <p>
-            Beyond client work, I maintain a personal infrastructure platform. A production-grade Proxmox cluster running Kubernetes, fully managed with Terraform and Ansible. It leverages GitOps via ArgoCD, centralized identity through Keycloak, secrets management with Vault, and a complete observability stack (Prometheus, Grafana, Loki, Tempo). An NVIDIA GPU powers real workloads, including local LLM inference and hardware-accelerated media processing. I use it to design, test, and stress systems, validating patterns before they reach production environments.
+            Outside of client work, I run a production-grade homelab: a 3-node Proxmox cluster with a k3s HA Kubernetes environment running 20+ services. It’s fully infrastructure-as-code—Packer-built golden images, Terraform-provisioned VMs, Ansible-configured nodes, and ArgoCD managing every deployment via GitOps. Keycloak handles SSO across all services, HashiCorp Vault manages secrets cluster-wide, and a complete observability stack (Prometheus, Grafana, Loki, Tempo) provides full visibility into everything running. An NVIDIA GPU handles LLM inference via Ollama and hardware-accelerated media transcoding. This portfolio is deployed and served live from that cluster.
           </p>
           <p>
-            This platform also serves as a **live demo environment**—a secure, production-like system you can log into and explore, with SSO and read-only access to real services.
+            The cluster is publicly accessible as a <a href="#" id="link-live-demo" class="inline-nav-link">live demo environment</a>—log in with SSO and explore the actual running infrastructure.
           </p>
 
         </section>
@@ -406,6 +405,9 @@
 
               <span>Oct 2024 — Present</span>
 
+              <p class="timeline-text">— Led the migration of 400+ production AWS accounts to a new payer account and AWS Organization, coordinating cross-team account restructuring, billing cutover, and post-migration validation at enterprise scale.</p>
+              <p class="timeline-text">— Architected and implemented a secure hybrid cloud environment enabling VPN-based access to internal web applications, with Sophos NDR traffic mirroring for network threat detection across cloud workloads.</p>
+              <p class="timeline-text">— Architected and led an Azure-to-AWS migration for a large Kubernetes-based healthcare application, redesigning the workload for AWS-native services while maintaining compliance and minimizing downtime.</p>
               <p class="timeline-text">— Designed and implemented a fully automated environment-scheduling solution using AWS Step Functions, Lambda (Python), Parameter Store, Terraform, and SNS, cutting Dev/QA cloud operating costs by 50%.</p>
               <p class="timeline-text">— Earned the AWS Solutions Architect Professional certification, demonstrating proficiency in cloud architecture, microservice design, and cost-optimized solution engineering.</p>
               <p class="timeline-text">— Conducted detailed cloud migration cost modeling and provided actionable optimization recommendations, enabling data-driven decisions for client environments.</p>
@@ -481,24 +483,98 @@
         <section class="projects">
 
           <div class="infra-intro content-card">
-            <p class="timeline-text">This isn't a demo project—it's a live, production-style environment.</p>
-            <p class="timeline-text">This portfolio is deployed through a Kubernetes cluster using GitOps, with centralized authentication and full observability.</p>
+            <p class="timeline-text">This is a fully operational, production-grade Kubernetes environment—not a sandbox or a mock. Every service runs continuously, the cluster self-heals via GitOps, and this portfolio is built, deployed, and served directly from it. The full stack is infrastructure-as-code: no manual configuration, no one-off commands.</p>
           </div>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="map-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Architecture Overview</h3>
+          </div>
+
+          <figure class="project-img screenshot-link" style="border-radius: 14px; overflow: hidden; cursor: zoom-in;" data-lightbox-img="./assets/images/Home-Lab.drawio.png" data-lightbox-caption="Homelab Architecture Diagram">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/Home-Lab.drawio.png" alt="Homelab Architecture Diagram" loading="lazy" style="width: 100%; height: auto; display: block;">
+          </figure>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Hardware & Cluster</h3>
+          </div>
+
+          <ul class="infra-list content-card">
+            <li class="timeline-text">— 3-node Proxmox VE bare-metal cluster (proxmox1, proxmox2, proxmox3)</li>
+            <li class="timeline-text">— k3s HA Kubernetes — 3 control-plane nodes + 6 workers, external PostgreSQL datastore</li>
+            <li class="timeline-text">— HAProxy + Keepalived active/passive VIP for cluster API high availability</li>
+            <li class="timeline-text">— VLAN-segmented network: k3s (VLAN 100), database (VLAN 200), load balancers (VLAN 50), LAN (VLAN 1)</li>
+            <li class="timeline-text">— NVIDIA GPU node with passthrough — dedicated for LLM inference and media transcoding</li>
+            <li class="timeline-text">— NFS-backed persistent storage, MinIO for S3-compatible object storage</li>
+            <li class="timeline-text">— Daily VM and container backups via Proxmox Backup Server</li>
+          </ul>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Provisioning Pipeline</h3>
+          </div>
+
+          <ul class="infra-list content-card">
+            <li class="timeline-text">— Packer builds Ubuntu 22.04 golden images with cloud-init baked in</li>
+            <li class="timeline-text">— Terraform provisions every VM and LXC container across all 3 Proxmox nodes</li>
+            <li class="timeline-text">— Ansible bootstraps k3s servers and agents, load balancers, and database</li>
+            <li class="timeline-text">— ArgoCD takes ownership from there — every application deployment is declarative and Git-driven</li>
+            <li class="timeline-text">— No node in the cluster was configured manually</li>
+          </ul>
 
           <div class="title-wrapper" style="margin-top: 25px;">
             <div class="icon-box">
               <ion-icon name="server-outline"></ion-icon>
             </div>
-            <h3 class="h3">What's Running</h3>
+            <h3 class="h3">Running Services</h3>
           </div>
 
           <ul class="infra-list content-card">
-            <li class="timeline-text">— Kubernetes orchestrating all services</li>
-            <li class="timeline-text">— ArgoCD managing deployments via GitOps</li>
-            <li class="timeline-text">— OIDC (SSO) securing access across applications</li>
-            <li class="timeline-text">— Grafana providing real-time system visibility</li>
-            <li class="timeline-text">— CI/CD pipelines building and deploying changes automatically</li>
+            <li class="timeline-text" style="font-weight: 600; color: var(--orange-yellow-crayola);">Platform</li>
+            <li class="timeline-text">— Traefik — ingress with automatic TLS termination via cert-manager (Let's Encrypt)</li>
+            <li class="timeline-text">— ArgoCD — GitOps controller with auto-sync, pruning, and self-healing across all apps</li>
+            <li class="timeline-text" style="margin-top: 10px; font-weight: 600; color: var(--orange-yellow-crayola);">Security & Identity</li>
+            <li class="timeline-text">— Keycloak — SSO/OIDC provider for all services; no fallback password auth anywhere</li>
+            <li class="timeline-text">— OAuth2 Proxy — group-based access enforcement at the ingress layer</li>
+            <li class="timeline-text">— HashiCorp Vault + Vault Secrets Operator — all secrets stored in Vault, injected into pods; nothing sensitive in Git</li>
+            <li class="timeline-text" style="margin-top: 10px; font-weight: 600; color: var(--orange-yellow-crayola);">Observability</li>
+            <li class="timeline-text">— Prometheus — metrics collection across all cluster workloads</li>
+            <li class="timeline-text">— Loki — log aggregation, stored in MinIO</li>
+            <li class="timeline-text">— Tempo — distributed tracing via OTLP, stored in MinIO</li>
+            <li class="timeline-text">— Grafana — unified observability dashboard with Keycloak SSO login</li>
+            <li class="timeline-text">— Alloy — telemetry collection and forwarding agent</li>
+            <li class="timeline-text" style="margin-top: 10px; font-weight: 600; color: var(--orange-yellow-crayola);">AI & Workloads</li>
+            <li class="timeline-text">— Ollama — local LLM inference on NVIDIA GPU (gemma3, qwen2.5-coder:14b)</li>
+            <li class="timeline-text">— Open WebUI — self-hosted chat interface, SSO-protected via Keycloak</li>
+            <li class="timeline-text">— Jellyfin — hardware-accelerated media server with GPU transcoding</li>
           </ul>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="git-branch-outline"></ion-icon>
+            </div>
+            <h3 class="h3">CI/CD — How This Page Got Here</h3>
+          </div>
+
+          <div class="content-card">
+            <p class="timeline-text">Every change to this portfolio triggers a fully automated deployment — no manual steps:</p>
+            <ul class="infra-list" style="margin-top: 10px;">
+              <li class="timeline-text">— Push to GitHub → Actions builds and pushes a container image to GHCR</li>
+              <li class="timeline-text">— Actions fires a repository_dispatch event to the homelab repo</li>
+              <li class="timeline-text">— Homelab Actions updates the image tag in the Kubernetes manifest and commits</li>
+              <li class="timeline-text">— ArgoCD detects the diff and auto-syncs — new pod is live within seconds</li>
+            </ul>
+          </div>
 
           <div class="title-wrapper" style="margin-top: 25px;">
             <div class="icon-box">
@@ -507,71 +583,77 @@
             <h3 class="h3">Live System Snapshots</h3>
           </div>
 
-          <p class="timeline-text" style="margin-bottom: 15px;">The screenshots below reflect the actual running environment.</p>
+          <p class="timeline-text" style="margin-bottom: 15px;">The screenshots below are from the actual running environment—not staged.</p>
 
           <ul class="project-list">
 
             <li class="project-item active">
-              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/project-1.jpg" data-lightbox-caption="ArgoCD — GitOps Deployments">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/argocd.png" data-lightbox-caption="ArgoCD — All applications actively synced and reconciled from Git">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
-                <img src="./assets/images/project-1.jpg" alt="ArgoCD GitOps Deployments" loading="lazy">
+                <img src="./assets/images/argocd.png" alt="ArgoCD GitOps Deployments" loading="lazy">
               </figure>
-              <h3 class="project-title">ArgoCD — GitOps Deployments</h3>
-              <p class="project-category">Applications actively synced and reconciled from Git.</p>
+              <h3 class="project-title">ArgoCD — GitOps</h3>
+              <p class="project-category">All applications continuously synced and reconciled from Git. Any drift is self-healed automatically.</p>
             </li>
 
             <li class="project-item active">
-              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/project-2.png" data-lightbox-caption="Grafana — Observability">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/grafana.png" data-lightbox-caption="Grafana — Unified observability across metrics, logs, and traces">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
-                <img src="./assets/images/project-2.png" alt="Grafana Observability" loading="lazy">
+                <img src="./assets/images/grafana.png" alt="Grafana Observability" loading="lazy">
               </figure>
               <h3 class="project-title">Grafana — Observability</h3>
-              <p class="project-category">Real-time metrics providing visibility into system health and performance.</p>
+              <p class="project-category">Unified visibility across Prometheus metrics, Loki logs, and Tempo traces — all in one dashboard.</p>
             </li>
 
             <li class="project-item active">
-              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/project-3.jpg" data-lightbox-caption="CI/CD — Deployment Pipeline">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/cicd.png" data-lightbox-caption="CI/CD — End-to-end deployment pipeline from GitHub to running pod">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
-                <img src="./assets/images/project-3.jpg" alt="CI/CD Deployment Pipeline" loading="lazy">
+                <img src="./assets/images/cicd.png" alt="CI/CD Deployment Pipeline" loading="lazy">
               </figure>
               <h3 class="project-title">CI/CD — Deployment Pipeline</h3>
-              <p class="project-category">Automated workflows building and deploying changes from GitHub.</p>
+              <p class="project-category">End-to-end pipeline from GitHub push to running pod — no manual steps.</p>
             </li>
 
             <li class="project-item active">
-              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/project-4.png" data-lightbox-caption="Homarr — Service Dashboard">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/services.png" data-lightbox-caption="Service Portal — Centralized SSO-protected access to all running services">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
-                <img src="./assets/images/project-4.png" alt="Homarr Service Dashboard" loading="lazy">
+                <img src="./assets/images/services.png" alt="Service Portal" loading="lazy">
               </figure>
-              <h3 class="project-title">Homarr — Service Dashboard</h3>
-              <p class="project-category">Centralized access point for all deployed services.</p>
+              <h3 class="project-title">Service Portal</h3>
+              <p class="project-category">Centralized SSO-protected dashboard providing access to all services running in the cluster.</p>
+            </li>
+
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/proxmox2.png" data-lightbox-caption="Proxmox — Bare-metal hypervisor managing VMs and LXC containers across 3 nodes">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/proxmox2.png" alt="Proxmox Virtualization Layer" loading="lazy">
+              </figure>
+              <h3 class="project-title">Proxmox — Virtualization Layer</h3>
+              <p class="project-category">Bare-metal hypervisor managing Terraform-provisioned VMs and LXC containers across 3 physical nodes.</p>
+            </li>
+
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/vault.png" data-lightbox-caption="HashiCorp Vault — Centralized secrets management for the entire cluster">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/vault.png" alt="Vault Secrets Management" loading="lazy">
+              </figure>
+              <h3 class="project-title">Vault — Secrets Management</h3>
+              <p class="project-category">All cluster secrets stored in Vault and injected into pods via the Vault Secrets Operator. Nothing sensitive in Git.</p>
             </li>
 
           </ul>
-
-          <div class="title-wrapper" style="margin-top: 25px;">
-            <div class="icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <h3 class="h3">What You're Looking At</h3>
-          </div>
-
-          <ul class="infra-list content-card">
-            <li class="timeline-text">— Applications actively synced and healthy in ArgoCD</li>
-            <li class="timeline-text">— Live infrastructure metrics in Grafana</li>
-            <li class="timeline-text">— CI/CD pipelines executing deployments</li>
-            <li class="timeline-text">— A unified dashboard for service access</li>
-          </ul>
-
-          <p class="timeline-text" style="margin-top: 12px; font-style: italic;">Everything shown is real and currently in use.</p>
 
           <div class="title-wrapper" style="margin-top: 25px;">
             <div class="icon-box">
@@ -581,33 +663,17 @@
           </div>
 
           <div class="content-card" style="margin-bottom: 15px;">
-            <p class="timeline-text">You can log in and explore the environment through a centralized dashboard.</p>
-            <p class="timeline-text" style="margin-top: 8px;">Access is intentionally scoped:</p>
-            <ul class="infra-list" style="margin-top: 6px;">
-              <li class="timeline-text">— Read-only permissions</li>
-              <li class="timeline-text">— No sensitive data</li>
-              <li class="timeline-text">— SSO-enabled authentication</li>
+            <p class="timeline-text">I'm happy to walk through the environment live or provide read-only SSO access to explore the running services directly—ArgoCD, Grafana, Vault, the service portal, and more.</p>
+            <p class="timeline-text" style="margin-top: 10px;">Reach out and I'll get you set up:</p>
+            <ul class="infra-list" style="margin-top: 8px;">
+              <li class="timeline-text">— Email: <a href="mailto:fahad24ahmed@gmail.com" class="inline-nav-link" style="font-weight: 500;">fahad24ahmed@gmail.com</a></li>
+              <li class="timeline-text">— LinkedIn: <a href="https://www.linkedin.com/in/fahad-ahmed-106376a5" target="_blank" rel="noopener noreferrer" class="inline-nav-link" style="font-weight: 500;">linkedin.com/in/fahad-ahmed-106376a5</a></li>
             </ul>
           </div>
 
-          <div class="content-card">
-            <p class="contact-title">Demo Access</p>
-            <p class="timeline-text" style="margin-top: 6px;">Username: <strong>demo</strong> &nbsp;|&nbsp; Password: <strong>demo</strong></p>
-          </div>
-
-          <div class="title-wrapper" style="margin-top: 25px;">
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
-            <h3 class="h3">Source of Truth</h3>
-          </div>
-
-          <div class="content-card" style="margin-bottom: 15px;">
-            <p class="timeline-text">The full implementation—including infrastructure, deployment workflows, and configuration—is available in GitHub.</p>
-          </div>
-
-          <div class="content-card">
-            <p class="timeline-text" style="font-style: italic;">This is how I approach systems: automated, observable, and designed to run reliably without manual intervention.</p>
+          <div class="content-card" style="margin-top: 25px; display: flex; align-items: center; gap: 12px;">
+            <ion-icon name="logo-github" style="font-size: 1.4em; color: var(--orange-yellow-crayola); flex-shrink: 0;"></ion-icon>
+            <p class="timeline-text">Full implementation — Packer, Terraform, Ansible, and every Kubernetes manifest — <a href="https://github.com/fahmed24/homelab" target="_blank" rel="noopener noreferrer" class="inline-nav-link" style="font-weight: 500;">github.com/fahmed24/homelab</a></p>
           </div>
 
         </section>
