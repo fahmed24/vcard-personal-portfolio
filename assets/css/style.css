@@ -127,6 +127,17 @@
 
 a { text-decoration: none; }
 
+.inline-nav-link {
+  display: inline;
+  color: var(--orange-yellow-crayola);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.inline-nav-link:hover { color: var(--white-1); }
+
 li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
