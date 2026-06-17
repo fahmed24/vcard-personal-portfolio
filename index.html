@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Fahad Ahmed | Sr. Cloud & DevOps Engineer</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
   <!--
     - custom css link
@@ -32,7 +32,6 @@
   -->
 
   <main>
-
     <!--
       - #SIDEBAR
     -->
@@ -42,14 +41,17 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/fahmed.png" alt="Fahad Ahmed" width="80" style="border-radius: 10%">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
+          <h1 class="name" title="Fahad Ahmed">Fahad Ahmed</h1>
+          <p class="title">Sr. Cloud & DevOps Engineer</p>
         </div>
+
+        <a href="https://www.credly.com/badges/157fe2a2-3e72-4e1f-a0a8-7d25720ea640/public_url" target="_blank" rel="noopener noreferrer" style="margin-block: -15px;">
+          <img src="./assets/images/aws-sa-pro.png" alt="AWS Certified Solutions Architect - Professional" width="70">
+        </a>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
@@ -67,56 +69,41 @@
 
           <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:fahad24ahmed@gmail.com" class="contact-link">fahad24ahmed@gmail.com</a>
             </div>
 
           </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
 
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+12133522795" class="contact-link">+1 (951) 490-7346</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Orange County, California, USA</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="contact-info">
+              <p class="contact-title">Release Notes</p>
+
+              <a href="https://github.com/fahmed24/vcard-personal-portfolio/releases" class="contact-link" style="color: var(--orange-yellow-crayola); text-decoration: underline; font-weight: var(--fw-500);">__VERSION__</a>
             </div>
 
           </li>
@@ -128,20 +115,14 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.linkedin.com/in/fahad-ahmed-106376a5" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://github.com/fahmed24" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
@@ -178,15 +159,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link id="nav-live-infrastructure">Live Infrastructure</button>
           </li>
 
         </ul>
@@ -209,18 +182,18 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I’m a Sr. Cloud and DevOps Engineer who designs and operates cloud infrastructure at enterprise scale. Recent work includes migrating 400+ production AWS accounts to a new organization, architecting a secure hybrid cloud environment with VPN-based access and Sophos NDR traffic mirroring, and leading an Azure-to-AWS migration for a large Kubernetes-based healthcare platform.
+          </p>
+          <p>
+            I’ve delivered that work across Ingram Micro, McKinsey, and Slalom—enterprise product teams and consulting engagements where infrastructure decisions carry real business weight. I also built automation at Ingram that cut Dev/QA cloud operating costs by 50%. My core stack is Terraform, AWS, Kubernetes, and the CI/CD systems that make deployment fast and auditable.
+          </p>
+          <p>
+            Outside of client work, I run a production-grade homelab: a 3-node Proxmox cluster with a k3s HA Kubernetes environment running 20+ services. It’s fully infrastructure-as-code—Packer-built golden images, Terraform-provisioned VMs, Ansible-configured nodes, and ArgoCD managing every deployment via GitOps. Keycloak handles SSO across all services, HashiCorp Vault manages secrets cluster-wide, and a complete observability stack (Prometheus, Grafana, Loki, Tempo) provides full visibility into everything running. An NVIDIA GPU handles LLM inference via Ollama and hardware-accelerated media transcoding. This portfolio is deployed and served live from that cluster.
+          </p>
+          <p>
+            The cluster is publicly accessible as a <a href="#" id="link-live-demo" class="inline-nav-link">live demo environment</a>—log in with SSO and explore the actual running infrastructure.
           </p>
 
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
         </section>
 
 
@@ -237,15 +210,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/kubernetes.svg" alt="design icon" width="65">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Production-Grade Infrastructure</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Designing and operating real-world cloud environments using Kubernetes, Terraform, and GitOps.
                 </p>
               </div>
 
@@ -254,14 +226,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/git.svg" alt="design icon" width="65">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">GitOps & Automation</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Automating deployments and infrastructure using declarative pipelines and CI/CD tooling.
                 </p>
               </div>
 
@@ -270,14 +242,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-identity-access.svg" alt="camera icon" width="65">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Identity & Access</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Implementing secure authentication across platforms using centralized identity providers.
                 </p>
               </div>
 
@@ -286,14 +258,46 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-observability.svg" alt="camera icon" width="65">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Observability & Monitoring</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Building visibility into systems with logging, metrics, and alerting to ensure reliability.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-cloud-architecture.svg" alt="camera icon" width="65">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Architecture</h4>
+
+                <p class="service-item-text">
+                    Designing scalable and cost-aware systems on AWS.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-demo-environment.svg" alt="Web development icon" width="65">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Demo Prod Environment</h4>
+
+                <p class="service-item-text">
+                  A fully functional, live environment showcasing modern DevOps practices end-to-end.
                 </p>
               </div>
 
@@ -303,113 +307,6 @@
 
         </section>
 
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
 
         <div class="modal-container" data-modal-container>
 
@@ -437,11 +334,6 @@
 
               <div data-modal-text>
                 <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                 </p>
               </div>
 
@@ -450,57 +342,6 @@
           </section>
 
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -532,41 +373,12 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">Cal Poly Pomona</h4>
 
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
+              <span>2011 — 2016</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Bachelor of Science, Computer Science — Pomona, CA
               </p>
 
             </li>
@@ -579,7 +391,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Experience</h3>
@@ -589,109 +401,66 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Senior Cloud Engineer — Ingram Micro</h4>
 
-              <span>2015 — Present</span>
+              <span>Oct 2024 — Present</span>
 
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
+              <p class="timeline-text">— Led the migration of 400+ production AWS accounts to a new payer account and AWS Organization, coordinating cross-team account restructuring, billing cutover, and post-migration validation at enterprise scale.</p>
+              <p class="timeline-text">— Architected and implemented a secure hybrid cloud environment enabling VPN-based access to internal web applications, with Sophos NDR traffic mirroring for network threat detection across cloud workloads.</p>
+              <p class="timeline-text">— Architected and led an Azure-to-AWS migration for a large Kubernetes-based healthcare application, redesigning the workload for AWS-native services while maintaining compliance and minimizing downtime.</p>
+              <p class="timeline-text">— Designed and implemented a fully automated environment-scheduling solution using AWS Step Functions, Lambda (Python), Parameter Store, Terraform, and SNS, cutting Dev/QA cloud operating costs by 50%.</p>
+              <p class="timeline-text">— Earned the AWS Solutions Architect Professional certification, demonstrating proficiency in cloud architecture, microservice design, and cost-optimized solution engineering.</p>
+              <p class="timeline-text">— Conducted detailed cloud migration cost modeling and provided actionable optimization recommendations, enabling data-driven decisions for client environments.</p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <h4 class="h4 timeline-item-title">Cloud Engineer II — McKinsey & Company</h4>
 
-              <span>2010 — 2013</span>
+              <span>Apr 2022 — Apr 2024</span>
 
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
+              <p class="timeline-text">— Built a real-time cloud analytics tool for renewable energy tech using AWS Kinesis and Python (PyFlink).</p>
+              <p class="timeline-text">— Developed a cloud Excel data analytics tool, improving data analysis, visualization, and decision-making processes.</p>
+              <p class="timeline-text">— Wrote Terraform IaC to create containers for a React/TypeScript frontend and GraphQL backend API.</p>
+              <p class="timeline-text">— Implemented Python (Pandas) Lambda functions to classify and import Excel data into PostgreSQL.</p>
+              <p class="timeline-text">— Set up CI/CD workflows with Git and GitHub Actions, enhancing development efficiency and real-time feedback.</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cloud Engineer — Slalom</h4>
+
+              <span>Nov 2018 — Mar 2022</span>
+
+              <p class="timeline-text">— Developed a global logging solution for energy IoT devices using AWS Lambda (Python), Kinesis, and Elasticsearch across multiple AWS accounts.</p>
+              <p class="timeline-text">— Enhanced unit and integration tests for a serverless media content approval app for Amazon Studios using Python (Pytest).</p>
+              <p class="timeline-text">— Guided teams through cloud migration strategies, emphasizing security and automated deployment, and created reusable Terraform modules.</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Operations Developer — Axos Clearing</h4>
+
+              <span>Jun 2017 — Jul 2018</span>
+
+              <p class="timeline-text">— Implemented trade processing automation strategies using Java, Spring, and Jenkins, significantly reducing operational errors and processing time.</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Full Stack Developer — Rapid Healthcare</h4>
+
+              <span>Aug 2016 — Jun 2017</span>
+
+              <p class="timeline-text">— Developed and launched healthcare web applications using AWS EC2 and PHP frameworks, enhancing patient care and operational workflows.</p>
 
             </li>
 
           </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
 
         </section>
 
@@ -705,233 +474,207 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="live infrastructure">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Live Infrastructure</h2>
         </header>
 
         <section class="projects">
 
-          <ul class="filter-list">
+          <div class="infra-intro content-card">
+            <p class="timeline-text">This is a fully operational, production-grade Kubernetes environment—not a sandbox or a mock. Every service runs continuously, the cluster self-heals via GitOps, and this portfolio is built, deployed, and served directly from it. The full stack is infrastructure-as-code: no manual configuration, no one-off commands.</p>
+          </div>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="map-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Architecture Overview</h3>
+          </div>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
+          <figure class="project-img screenshot-link" style="border-radius: 14px; overflow: hidden; cursor: zoom-in;" data-lightbox-img="./assets/images/Home-Lab.drawio.png" data-lightbox-caption="Homelab Architecture Diagram">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/Home-Lab.drawio.png" alt="Homelab Architecture Diagram" loading="lazy" style="width: 100%; height: auto; display: block;">
+          </figure>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Hardware & Cluster</h3>
+          </div>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
+          <ul class="infra-list content-card">
+            <li class="timeline-text">— 3-node Proxmox VE bare-metal cluster (proxmox1, proxmox2, proxmox3)</li>
+            <li class="timeline-text">— k3s HA Kubernetes — 3 control-plane nodes + 6 workers, external PostgreSQL datastore</li>
+            <li class="timeline-text">— HAProxy + Keepalived active/passive VIP for cluster API high availability</li>
+            <li class="timeline-text">— VLAN-segmented network: k3s (VLAN 100), database (VLAN 200), load balancers (VLAN 50), LAN (VLAN 1)</li>
+            <li class="timeline-text">— NVIDIA GPU node with passthrough — dedicated for LLM inference and media transcoding</li>
+            <li class="timeline-text">— NFS-backed persistent storage, MinIO for S3-compatible object storage</li>
+            <li class="timeline-text">— Daily VM and container backups via Proxmox Backup Server</li>
           </ul>
 
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Provisioning Pipeline</h3>
           </div>
+
+          <ul class="infra-list content-card">
+            <li class="timeline-text">— Packer builds Ubuntu 22.04 golden images with cloud-init baked in</li>
+            <li class="timeline-text">— Terraform provisions every VM and LXC container across all 3 Proxmox nodes</li>
+            <li class="timeline-text">— Ansible bootstraps k3s servers and agents, load balancers, and database</li>
+            <li class="timeline-text">— ArgoCD takes ownership from there — every application deployment is declarative and Git-driven</li>
+            <li class="timeline-text">— No node in the cluster was configured manually</li>
+          </ul>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Running Services</h3>
+          </div>
+
+          <ul class="infra-list content-card">
+            <li class="timeline-text" style="font-weight: 600; color: var(--orange-yellow-crayola);">Platform</li>
+            <li class="timeline-text">— Traefik — ingress with automatic TLS termination via cert-manager (Let's Encrypt)</li>
+            <li class="timeline-text">— ArgoCD — GitOps controller with auto-sync, pruning, and self-healing across all apps</li>
+            <li class="timeline-text" style="margin-top: 10px; font-weight: 600; color: var(--orange-yellow-crayola);">Security & Identity</li>
+            <li class="timeline-text">— Keycloak — SSO/OIDC provider for all services; no fallback password auth anywhere</li>
+            <li class="timeline-text">— OAuth2 Proxy — group-based access enforcement at the ingress layer</li>
+            <li class="timeline-text">— HashiCorp Vault + Vault Secrets Operator — all secrets stored in Vault, injected into pods; nothing sensitive in Git</li>
+            <li class="timeline-text" style="margin-top: 10px; font-weight: 600; color: var(--orange-yellow-crayola);">Observability</li>
+            <li class="timeline-text">— Prometheus — metrics collection across all cluster workloads</li>
+            <li class="timeline-text">— Loki — log aggregation, stored in MinIO</li>
+            <li class="timeline-text">— Tempo — distributed tracing via OTLP, stored in MinIO</li>
+            <li class="timeline-text">— Grafana — unified observability dashboard with Keycloak SSO login</li>
+            <li class="timeline-text">— Alloy — telemetry collection and forwarding agent</li>
+            <li class="timeline-text" style="margin-top: 10px; font-weight: 600; color: var(--orange-yellow-crayola);">AI & Workloads</li>
+            <li class="timeline-text">— Ollama — local LLM inference on NVIDIA GPU (gemma3, qwen2.5-coder:14b)</li>
+            <li class="timeline-text">— Open WebUI — self-hosted chat interface, SSO-protected via Keycloak</li>
+            <li class="timeline-text">— Jellyfin — hardware-accelerated media server with GPU transcoding</li>
+          </ul>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="git-branch-outline"></ion-icon>
+            </div>
+            <h3 class="h3">CI/CD — How This Page Got Here</h3>
+          </div>
+
+          <div class="content-card">
+            <p class="timeline-text">Every change to this portfolio triggers a fully automated deployment — no manual steps:</p>
+            <ul class="infra-list" style="margin-top: 10px;">
+              <li class="timeline-text">— Push to GitHub → Actions builds and pushes a container image to GHCR</li>
+              <li class="timeline-text">— Actions fires a repository_dispatch event to the homelab repo</li>
+              <li class="timeline-text">— Homelab Actions updates the image tag in the Kubernetes manifest and commits</li>
+              <li class="timeline-text">— ArgoCD detects the diff and auto-syncs — new pod is live within seconds</li>
+            </ul>
+          </div>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="camera-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Live System Snapshots</h3>
+          </div>
+
+          <p class="timeline-text" style="margin-bottom: 15px;">The screenshots below are from the actual running environment—not staged.</p>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/argocd.png" data-lightbox-caption="ArgoCD — All applications actively synced and reconciled from Git">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/argocd.png" alt="ArgoCD GitOps Deployments" loading="lazy">
+              </figure>
+              <h3 class="project-title">ArgoCD — GitOps</h3>
+              <p class="project-category">All applications continuously synced and reconciled from Git. Any drift is self-healed automatically.</p>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/grafana.png" data-lightbox-caption="Grafana — Unified observability across metrics, logs, and traces">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/grafana.png" alt="Grafana Observability" loading="lazy">
+              </figure>
+              <h3 class="project-title">Grafana — Observability</h3>
+              <p class="project-category">Unified visibility across Prometheus metrics, Loki logs, and Tempo traces — all in one dashboard.</p>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/cicd.png" data-lightbox-caption="CI/CD — End-to-end deployment pipeline from GitHub to running pod">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/cicd.png" alt="CI/CD Deployment Pipeline" loading="lazy">
+              </figure>
+              <h3 class="project-title">CI/CD — Deployment Pipeline</h3>
+              <p class="project-category">End-to-end pipeline from GitHub push to running pod — no manual steps.</p>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/services.png" data-lightbox-caption="Service Portal — Centralized SSO-protected access to all running services">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/services.png" alt="Service Portal" loading="lazy">
+              </figure>
+              <h3 class="project-title">Service Portal</h3>
+              <p class="project-category">Centralized SSO-protected dashboard providing access to all services running in the cluster.</p>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/proxmox2.png" data-lightbox-caption="Proxmox — Bare-metal hypervisor managing VMs and LXC containers across 3 nodes">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/proxmox2.png" alt="Proxmox Virtualization Layer" loading="lazy">
+              </figure>
+              <h3 class="project-title">Proxmox — Virtualization Layer</h3>
+              <p class="project-category">Bare-metal hypervisor managing Terraform-provisioned VMs and LXC containers across 3 physical nodes.</p>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item active">
+              <figure class="project-img screenshot-link" data-lightbox-img="./assets/images/vault.png" data-lightbox-caption="HashiCorp Vault — Centralized secrets management for the entire cluster">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/vault.png" alt="Vault Secrets Management" loading="lazy">
+              </figure>
+              <h3 class="project-title">Vault — Secrets Management</h3>
+              <p class="project-category">All cluster secrets stored in Vault and injected into pods via the Vault Secrets Operator. Nothing sensitive in Git.</p>
             </li>
 
           </ul>
+
+          <div class="title-wrapper" style="margin-top: 25px;">
+            <div class="icon-box">
+              <ion-icon name="open-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Explore It Yourself</h3>
+          </div>
+
+          <div class="content-card" style="margin-bottom: 15px;">
+            <p class="timeline-text">I'm happy to walk through the environment live or provide read-only SSO access to explore the running services directly—ArgoCD, Grafana, Vault, the service portal, and more.</p>
+            <p class="timeline-text" style="margin-top: 10px;">Reach out and I'll get you set up:</p>
+            <ul class="infra-list" style="margin-top: 8px;">
+              <li class="timeline-text">— Email: <a href="mailto:fahad24ahmed@gmail.com" class="inline-nav-link" style="font-weight: 500;">fahad24ahmed@gmail.com</a></li>
+              <li class="timeline-text">— LinkedIn: <a href="https://www.linkedin.com/in/fahad-ahmed-106376a5" target="_blank" rel="noopener noreferrer" class="inline-nav-link" style="font-weight: 500;">linkedin.com/in/fahad-ahmed-106376a5</a></li>
+            </ul>
+          </div>
+
+          <div class="content-card" style="margin-top: 25px; display: flex; align-items: center; gap: 12px;">
+            <ion-icon name="logo-github" style="font-size: 1.4em; color: var(--orange-yellow-crayola); flex-shrink: 0;"></ion-icon>
+            <p class="timeline-text">Full implementation — Packer, Terraform, Ansible, and every Kubernetes manifest — <a href="https://github.com/fahmed24/homelab" target="_blank" rel="noopener noreferrer" class="inline-nav-link" style="font-weight: 500;">github.com/fahmed24/homelab</a></p>
+          </div>
 
         </section>
 
@@ -941,11 +684,7 @@
 
 
 
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="blog" style="display:none;">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -1133,11 +872,7 @@
 
 
 
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="contact" style="display:none;">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -1180,6 +915,15 @@
 
   </main>
 
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" data-lightbox-overlay>
+    <button class="lightbox-close" data-lightbox-close>&times;</button>
+    <figure class="lightbox-figure" data-lightbox-close>
+      <img alt="" data-lightbox-img-el>
+      <figcaption data-lightbox-text></figcaption>
+    </figure>
+  </div>
+
 
 
 
@@ -1189,6 +933,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
 
   <!--
     - ionicon link

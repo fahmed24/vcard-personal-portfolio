@@ -2,14 +2,14 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Fahad Ahmed
+Fahad Ahmed
+DevOps Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+fahad24ahmed@gmail.com
 
 Phone
 +1 (213) 352-2795
