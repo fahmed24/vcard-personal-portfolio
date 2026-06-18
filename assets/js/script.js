@@ -180,26 +180,19 @@ document.addEventListener("keydown", function (e) {
 
 
 // add event to all nav link
-function navigateTo(page) {
-  for (let i = 0; i < pages.length; i++) {
-    if (pages[i].dataset.page === page) {
-      pages[i].classList.add("active");
-      if (navigationLinks[i]) navigationLinks[i].classList.add("active");
-    } else {
-      pages[i].classList.remove("active");
-      if (navigationLinks[i]) navigationLinks[i].classList.remove("active");
-    }
-  }
-  window.scrollTo(0, 0);
-}
-
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    navigateTo(this.innerHTML.toLowerCase());
+
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        if (navigationLinks[i]) navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        if (navigationLinks[i]) navigationLinks[i].classList.remove("active");
+      }
+    }
+
   });
 }
-
-document.getElementById("link-live-demo").addEventListener("click", function (e) {
-  e.preventDefault();
-  navigateTo("live infrastructure");
-});
