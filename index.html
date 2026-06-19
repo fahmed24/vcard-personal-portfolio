@@ -515,7 +515,7 @@
           <ul class="infra-list content-card">
             <li class="timeline-text">— 3-node Proxmox VE bare-metal cluster (proxmox1, proxmox2, proxmox3)</li>
             <li class="timeline-text">— k3s HA Kubernetes — 3 control-plane nodes + 6 workers, external PostgreSQL datastore</li>
-            <li class="timeline-text">— HAProxy + Keepalived active/passive VIP for cluster API high availability</li>
+            <li class="timeline-text">— HAProxy + Keepalived active/passive VIP for cluster API high availability and controlled public ingress</li>
             <li class="timeline-text">— VLAN-segmented network: k3s (VLAN 100), database (VLAN 200), load balancers (VLAN 50), LAN (VLAN 1)</li>
             <li class="timeline-text">— NVIDIA GPU node with passthrough — dedicated for LLM inference and media transcoding</li>
             <li class="timeline-text">— NFS-backed persistent storage, MinIO for S3-compatible object storage</li>
@@ -588,7 +588,7 @@
             <h3 class="h3">Live System Snapshots</h3>
           </div>
 
-          <p class="timeline-text" style="margin-bottom: 15px;">The screenshots below are from the actual running environment—not staged.</p>
+          <p class="timeline-text" style="margin-bottom: 15px;">The screenshots below are from the actual running environment.</p>
 
           <ul class="project-list">
 
@@ -668,7 +668,7 @@
           </div>
 
           <div class="content-card" style="margin-bottom: 15px;">
-            <p class="timeline-text">I'm happy to walk through the environment live or provide read-only SSO access to explore the running services directly—ArgoCD, Grafana, Vault, the service portal, and more.</p>
+            <p class="timeline-text">I'm happy to walk through the environment live or provide read-only SSO access to explore the running services directly—ArgoCD, Grafana, OpenWebUI (LLM Inference), Jellyfin, the service portal, and more.</p>
             <p class="timeline-text" style="margin-top: 10px;">Reach out and I'll get you set up:</p>
             <ul class="infra-list" style="margin-top: 8px;">
               <li class="timeline-text">— Email: <a href="mailto:fahad24ahmed@gmail.com" class="inline-nav-link" style="font-weight: 500;">fahad24ahmed@gmail.com</a></li>
