@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fahad Ahmed | Sr. Cloud & DevOps Engineer</title>
+  <title>Fahad Ahmed | Platform & DevOps Engineer</title>
 
   <!--
     - favicon
@@ -46,7 +46,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Fahad Ahmed">Fahad Ahmed</h1>
-          <p class="title">Sr. Cloud & DevOps Engineer</p>
+          <p class="title">Platform & DevOps Engineer</p>
         </div>
 
         <a href="https://www.credly.com/badges/157fe2a2-3e72-4e1f-a0a8-7d25720ea640/public_url" target="_blank" rel="noopener noreferrer" style="margin-block: -15px;">
@@ -187,16 +187,10 @@
 
         <section class="about-text">
           <p>
-            I’m a Sr. Cloud and DevOps Engineer who designs and operates cloud infrastructure at enterprise scale. Recent work includes migrating 400+ production AWS accounts to a new organization, architecting a secure hybrid cloud environment with VPN-based access and Sophos NDR traffic mirroring, and leading an Azure-to-AWS migration for a large Kubernetes-based healthcare platform.
+            I’m a Platform and DevOps Engineer with 8+ years building cloud infrastructure at Ingram Micro, McKinsey, and Slalom. I work in AWS, Terraform, and Kubernetes, and specialize in landing zones, GitOps delivery, and CI/CD systems that ship fast without sacrificing security or compliance.
           </p>
           <p>
-            I’ve delivered that work across Ingram Micro, McKinsey, and Slalom—enterprise product teams and consulting engagements where infrastructure decisions carry real business weight. I also built automation at Ingram that cut Dev/QA cloud operating costs by 50%. My core stack is Terraform, AWS, Kubernetes, and the CI/CD systems that make deployment fast and auditable.
-          </p>
-          <p>
-            Outside of client work, I run a production-grade homelab: a 3-node Proxmox cluster with a k3s HA Kubernetes environment running 20+ services. It’s fully infrastructure-as-code—Packer-built golden images, Terraform-provisioned VMs, Ansible-configured nodes, and ArgoCD managing every deployment via GitOps. Keycloak handles SSO across all services, HashiCorp Vault manages secrets cluster-wide, and a complete observability stack (Prometheus, Grafana, Loki, Tempo) provides full visibility into everything running. An NVIDIA GPU handles LLM inference via Ollama and hardware-accelerated media transcoding. This portfolio is deployed and served live from that cluster.
-          </p>
-          <p>
-            The cluster is publicly accessible as a <a href="https://apps.fahmed.org" target="_blank" rel="noopener noreferrer" class="inline-nav-link">live demo environment</a>—log in with SSO and explore the running infrastructure.
+            Outside of client work, I designed and operate a self-hosted infrastructure platform—a k3s Kubernetes cluster fully managed via GitOps with Vault, Keycloak SSO, and a full observability stack. It serves this site live and is open as a <a href="https://apps.fahmed.org" target="_blank" rel="noopener noreferrer" class="inline-nav-link">public demo environment</a>.
           </p>
 
         </section>
@@ -364,108 +358,16 @@
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <section class="timeline">
+        <section class="resume-pdf">
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Cal Poly Pomona</h4>
-
-              <span>2011 — 2016</span>
-
-              <p class="timeline-text">
-                Bachelor of Science, Computer Science — Pomona, CA
+          <div class="resume-pdf-frame">
+            <object data="./assets/Fahad-Ahmed-Resume.pdf" type="application/pdf" class="resume-pdf-object">
+              <p class="timeline-text" style="padding: 20px;">
+                Your browser can't display the embedded PDF.
+                <a href="./assets/Fahad-Ahmed-Resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-nav-link">Open it in a new tab</a> instead.
               </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
+            </object>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Senior Cloud Engineer — Ingram Micro</h4>
-
-              <span>Oct 2024 — Present</span>
-
-              <p class="timeline-text">— Led the migration of 400+ production AWS accounts to a new payer account and AWS Organization, coordinating cross-team account restructuring, billing cutover, and post-migration validation at enterprise scale.</p>
-              <p class="timeline-text">— Architected and implemented a secure hybrid cloud environment enabling VPN-based access to internal web applications, with Sophos NDR traffic mirroring for network threat detection across cloud workloads.</p>
-              <p class="timeline-text">— Architected and led an Azure-to-AWS migration for a large Kubernetes-based healthcare application, redesigning the workload for AWS-native services while maintaining compliance and minimizing downtime.</p>
-              <p class="timeline-text">— Designed and implemented a fully automated environment-scheduling solution using AWS Step Functions, Lambda (Python), Parameter Store, Terraform, and SNS, cutting Dev/QA cloud operating costs by 50%.</p>
-              <p class="timeline-text">— Earned the AWS Solutions Architect Professional certification, demonstrating proficiency in cloud architecture, microservice design, and cost-optimized solution engineering.</p>
-              <p class="timeline-text">— Conducted detailed cloud migration cost modeling and provided actionable optimization recommendations, enabling data-driven decisions for client environments.</p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Cloud Engineer II — McKinsey & Company</h4>
-
-              <span>Apr 2022 — Apr 2024</span>
-
-              <p class="timeline-text">— Built a real-time cloud analytics tool for renewable energy tech using AWS Kinesis and Python (PyFlink).</p>
-              <p class="timeline-text">— Developed a cloud Excel data analytics tool, improving data analysis, visualization, and decision-making processes.</p>
-              <p class="timeline-text">— Wrote Terraform IaC to create containers for a React/TypeScript frontend and GraphQL backend API.</p>
-              <p class="timeline-text">— Implemented Python (Pandas) Lambda functions to classify and import Excel data into PostgreSQL.</p>
-              <p class="timeline-text">— Set up CI/CD workflows with Git and GitHub Actions, enhancing development efficiency and real-time feedback.</p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Cloud Engineer — Slalom</h4>
-
-              <span>Nov 2018 — Mar 2022</span>
-
-              <p class="timeline-text">— Developed a global logging solution for energy IoT devices using AWS Lambda (Python), Kinesis, and Elasticsearch across multiple AWS accounts.</p>
-              <p class="timeline-text">— Enhanced unit and integration tests for a serverless media content approval app for Amazon Studios using Python (Pytest).</p>
-              <p class="timeline-text">— Guided teams through cloud migration strategies, emphasizing security and automated deployment, and created reusable Terraform modules.</p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Operations Developer — Axos Clearing</h4>
-
-              <span>Jun 2017 — Jul 2018</span>
-
-              <p class="timeline-text">— Implemented trade processing automation strategies using Java, Spring, and Jenkins, significantly reducing operational errors and processing time.</p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Full Stack Developer — Rapid Healthcare</h4>
-
-              <span>Aug 2016 — Jun 2017</span>
-
-              <p class="timeline-text">— Developed and launched healthcare web applications using AWS EC2 and PHP frameworks, enhancing patient care and operational workflows.</p>
-
-            </li>
-
-          </ol>
 
         </section>
 
