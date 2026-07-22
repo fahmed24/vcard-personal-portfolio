@@ -303,6 +303,26 @@ article.active {
   z-index: -1;
 }
 
+.resume-pdf { margin-bottom: 0; }
+
+.resume-pdf-frame {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--border-gradient-onyx);
+  box-shadow: var(--shadow-2);
+  padding: 1px;
+}
+
+.resume-pdf-object {
+  width: 100%;
+  height: calc(100vh - 230px);
+  min-height: 400px;
+  display: block;
+  border: none;
+  border-radius: 13px;
+}
+
 
 
 
